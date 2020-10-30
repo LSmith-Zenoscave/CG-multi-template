@@ -7,14 +7,14 @@ namespace template
         static void Main(string[] args)
         {
             var game = new Game();
-            var strategy = new BaseStrategy();
+            var searcher = new SearchStrategy<MonteCarlo>();
 
             game.init();
 
             while(true)
             {
                 game.update();
-                var actions = strategy.solve(game, game.Turn == 1 ? 1000 : 100);
+                var actions = searcher.solve(game, game.Turn == 1 ? 1000 : 100);
                 IO.WriteLine(actions);
             }
         }

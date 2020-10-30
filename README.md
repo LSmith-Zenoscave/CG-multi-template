@@ -9,7 +9,20 @@ Features
 
 Todo
 ----
-[ ] Add basic I/O utils
-[ ] Add common data-structures
-[ ] Add common board algos
-[ ] Add searching algos 
+* [x] Add basic I/O utils
+* [ ] Add common data-structures
+* [ ] Add common graph algos (bfs, dfs, dijkstra, floyd-warshall)
+* [ ] Add searching algos
+    * [x] MonteCarlo
+    * [ ] MCTS
+    * [ ] Beam Search
+    * [ ] BFS
+    * [ ] Hill Climbing
+    * [ ] Chokudai / Beam Stack
+    * [ ] SmitsiMax
+    * [ ] MiniMax Variants
+        * [ ] MiniMax
+        * [ ] AlphaBeta
+        * [ ] NegaMax
+        * [ ] NegaScout
+        * [ ] Paranoid and Max^N

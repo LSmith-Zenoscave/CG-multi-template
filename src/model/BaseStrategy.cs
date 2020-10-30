@@ -3,13 +3,8 @@ using System.Collections.Generic;
 
 namespace template
 {
-    class BaseStrategy
+    abstract internal class BaseStrategy
     {
-        public List<Action> solve(Game game, int timeout_ms)
-        {
-                var actions = new List<Action>();
-
-                return actions;
-        }
+        abstract public List<Action> solve(Game game, int timeout_ms);
     }
 }

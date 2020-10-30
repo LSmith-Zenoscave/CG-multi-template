@@ -2,11 +2,26 @@ using System;
 
 namespace template
 {
-    class Action
+    internal class Action
     {
+        // Action Types
+
+        // Action Data
+        public int Type;
+
+        public Action(int type)
+        {
+            Type = type;
+        }
+
+
         public override string ToString()
         {
-            return base.ToString();
+            switch (Type)
+            {
+                default:
+                    return "UNKOWN_ACTION";
+            }
         }
     }
 }

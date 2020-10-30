@@ -4,7 +4,7 @@ set -e
 set -x
 
 if ! kill -0 $(cat cgsharp.pid) >/dev/null 2>&1 ; then
-    CSharpMerger >build.log 2>build.error.log &
+    echo "r" | CSharpMerger >build.log 2>build.error.log &
     echo $! > cgsharp.pid
 fi
 
